@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<World>
+  <Enemy>
+    <name>Orc</name>
+    <level>2</level>
+    <health>15</health>
+    <displayChar>o</displayChar>
+    <hostile>true</hostile>
+  </Enemy>
+
+  <Enemy>
+    <name>Gargoyle</name>
+    <level>3</level>
+    <health>20</health>
+    <displayChar>G</displayChar>
+    <hostile>true</hostile>
+  </Enemy>
+
+  <Enemy>
+    <name>Banshee</name>
+    <level>7</level>
+    <health>30</health>
+    <displayChar>b</displayChar>
+    <hostile>true</hostile>
+  </Enemy>
+
+  <Enemy>
+    <name>BladeMaster</name>
+    <level>9</level>
+    <health>40</health>
+    <displayChar>B</displayChar>
+    <hostile>true</hostile>
+  </Enemy>
+
+  <Enemy>
+    <name>Anaconda</name>
+    <level>10</level>
+    <health>50</health>
+    <displayChar>A</displayChar>
+    <hostile>true</hostile>
+  </Enemy>
+
+  <Enemy>
+    <name>MotherSpider</name>
+    <level>13</level>
+    <health>60</health>
+    <displayChar>M</displayChar>
+    <hostile>true</hostile>
+  </Enemy>
+
+  <Enemy>
+    <name>BeheadedZombie</name>
+    <level>11</level>
+    <health>70</health>
+    <displayChar>Z</displayChar>
+    <hostile>true</hostile>
+  </Enemy>
+
+  <Enemy>
+    <name>Crackhead</name>
+    <level>13</level>
+    <health>80</health>
+    <displayChar>!</displayChar>
+    <hostile>true</hostile>
+  </Enemy>
+
+  <Enemy>
+    <name>OverlordBlagg</name>
+    <level>14</level>
+    <health>90</health>
+    <displayChar>b</displayChar>
+    <hostile>true</hostile>
+  </Enemy>
+
+  <Enemy>
+    <name>OverlordBrown</name>
+    <level>15</level>
+    <health>95</health>
+    <displayChar>B</displayChar>
+    <hostile>true</hostile>
+  </Enemy>
+
+  <Enemy>
+    <name>wight</name>
+    <level>2</level>
+    <health>12</health>
+    <displayChar>w</displayChar>
+    <hostile>true</hostile>
+  </Enemy>
+
+ 
+  <Enemy>
+    <name>werewolf</name>
+    <level>5</level>
+    <health>12</health>
+    <displayChar>W</displayChar>
+    <hostile>true</hostile>
+  </Enemy>
+
+  <Enemy>
+    <name>Drake</name>
+    <level>9</level>
+    <health>15</health>
+    <displayChar>d</displayChar>
+    <hostile>true</hostile>
+  </Enemy>
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <Enemy>
+    <name>goblin</name>
+    <level>1</level>
+    <health>8</health>
+    <displayChar>g</displayChar>
+    <hostile>true</hostile>
+  </Enemy>
+  <Enemy>
+    <name>goblin shaman</name>
+    <level>3</level>
+    <health>12</health>
+    <displayChar>g</displayChar>
+    <hostile>true</hostile>
+  </Enemy>
+  <Enemy>
+    <name>orc shaman</name>
+    <level>4</level>
+    <health>20</health>
+    <displayChar>o</displayChar>
+    <hostile>true</hostile>
+  </Enemy>
+  <Enemy>
+    <name>kobold</name>
+    <level>1</level>
+    <health>8</health>
+    <displayChar>k</displayChar>
+    <hostile>true</hostile>
+  </Enemy>
+  <Enemy>
+    <name>kobold shaman</name>
+    <level>2</level>
+    <health>12</health>
+    <displayChar>k</displayChar>
+    <hostile>true</hostile>
+  </Enemy>
+  <Enemy>
+    <name>ogre</name>
+    <level>6</level>
+    <health>35</health>
+    <displayChar>O</displayChar>
+    <hostile>true</hostile>
+  </Enemy>
+  <Enemy>
+    <name>wolf</name>
+    <level>2</level>
+    <health>10</health>
+    <displayChar>q</displayChar>
+    <hostile>false</hostile>
+  </Enemy>
+  <Enemy>
+    <name>warg</name>
+    <level>3</level>
+    <health>25</health>
+    <displayChar>q</displayChar>
+    <hostile>true</hostile>
+  </Enemy>
+  <Enemy>
+    <name>red dragon</name>
+    <health>100</health>
+    <level>15</level>
+    <displayChar>D</displayChar>
+    <hostile>true</hostile>
+  </Enemy>
+  <Enemy>
+    <name>dwarf</name>
+    <level>4</level>
+    <health>15</health>
+    <displayChar>h</displayChar>
+    <hostile>false</hostile>
+  </Enemy>
+</World>

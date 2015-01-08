@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<World>
+<Item>
+<name>silver key</name>
+<displayChar>)</displayChar>
+<quantity>1</quantity>
+<weight>1</weight>
+<value>10</value>
+</Item>
+<Weapon>
+<name>greatsword</name>
+<displayChar>(</displayChar>
+<quantity>1</quantity>
+<weight>20</weight>
+<value>100</value>
+<damage>10</damage>
+<type>slashing</type>
+</Weapon>
+  <Weapon>
+    <name>LesserSword</name>
+    <displayChar>i</displayChar>
+    <quantity>1</quantity>
+    <weight>20</weight>
+    <value>10</value>
+    <damage>4</damage>
+    <type>slashing</type>
+  </Weapon>
+  <Weapon>
+    <name>Sabre</name>
+    <displayChar>i</displayChar>
+    <quantity>1</quantity>
+    <weight>20</weight>
+    <value>15</value>
+    <damage>5</damage>
+    <type>slashing</type>
+  </Weapon>
+  <Weapon>
+    <name>Katana</name>
+    <displayChar>l</displayChar>
+    <quantity>1</quantity>
+    <weight>20</weight>
+    <value>20</value>
+    <damage>7</damage>
+    <type>slashing</type>
+  </Weapon>
+  <Weapon>
+    <name>Axe</name>
+    <displayChar>l</displayChar>
+    <quantity>1</quantity>
+    <weight>20</weight>
+    <value>25</value>
+    <damage>7</damage>
+    <type>slashing</type>
+  </Weapon>
+  <Weapon>
+    <name>Thunderfury</name>
+    <displayChar>V</displayChar>
+    <quantity>1</quantity>
+    <weight>20</weight>
+    <value>100</value>
+    <damage>20</damage>
+    <type>slashing</type>
+  </Weapon>
+<Weapon>
+<name>warhammer</name>
+<displayChar>(</displayChar>
+<quantity>1</quantity>
+<weight>10</weight>
+<value>50</value>
+<damage>5</damage>
+<type>blunt</type>
+</Weapon>
+<Weapon>
+<name>dagger</name>
+<displayChar>(</displayChar>
+<quantity>1</quantity>
+<weight>5</weight>
+<value>10</value>
+<damage>3</damage>
+<type>piercing</type>
+</Weapon>
+<Armor>
+<name>chainmail</name>
+<displayChar>[</displayChar>
+<quantity>1</quantity>
+<weight>30</weight>
+<value>80</value>
+<type>body</type>
+<protection>5</protection>
+</Armor>
+<Armor>
+<name>leather</name>
+<displayChar>[</displayChar>
+<quantity>1</quantity>
+<weight>10</weight>
+<value>20</value>
+<type>body</type>
+<protection>2</protection>
+</Armor>
+<Armor>
+<name>platemail</name>
+<displayChar>[</displayChar>
+<quantity>1</quantity>
+<weight>50</weight>
+<value>200</value>
+<type>body</type>
+<protection>12</protection>
+</Armor>
+  <Armor>
+    <name>GladiatorHelm</name>
+    <displayChar>^</displayChar>
+    <quantity>1</quantity>
+    <weight>10</weight>
+    <value>200</value>
+    <type>body</type>
+    <protection>20</protection>
+  </Armor>
+  <Armor>
+    <name>SwiftDragonGloves</name>
+    <displayChar>;</displayChar>
+    <quantity>1</quantity>
+    <weight>10</weight>
+    <value>150</value>
+    <type>body</type>
+    <protection>15</protection>
+  </Armor>
+  <Armor>
+    <name>AchillesBoots</name>
+    <displayChar>%</displayChar>
+    <quantity>1</quantity>
+    <weight>10</weight>
+    <value>100</value>
+    <type>body</type>
+    <protection>8</protection>
+  </Armor>
+  <Armor>
+    <name>WarpaintedHelm</name>
+    <displayChar>@</displayChar>
+    <quantity>1</quantity>
+    <weight>10</weight>
+    <value>25</value>
+    <type>body</type>
+    <protection>6</protection>
+  </Armor>
+  <Armor>
+    <name>lesserLeather</name>
+    <displayChar>{</displayChar>
+    <quantity>1</quantity>
+    <weight>10</weight>
+    <value>20</value>
+    <type>body</type>
+    <protection>4</protection>
+  </Armor>
+  
+
+</World>

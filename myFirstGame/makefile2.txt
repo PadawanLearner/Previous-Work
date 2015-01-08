@@ -1,0 +1,42 @@
+
+OBJECTS = Entity.o Item.o Unit.o Enemy.o Player.o Consumable.o Weapon.o Armor.o XMLSerializable.o DungeonLevel.o Tile.o
+
+HEADERS = Entity.h Item.h Unit.h Enemy.h Player.h Consumable.h Weapon.h Armor.h XMLSerializable.h DungeonLevel.h Tile.h
+
+
+%.o: %.cpp $(HEADERS)
+        g++ --std=c++0x -c $< -o $@
+
+prog1: $(OBJECTS) main.o
+        g++ --std=c++0x $^ -o prog1
+
+la5: $(OBJECTS) la5.o
+        g++ $^ -o la5
+
+prog2: $(OBJECTS) prog2_main.o
+        g++  --std=c++0x  $^ -o prog2
+
+prog2test: $(OBJECTS) prog2_unit_test_main.o
+        g++  --std=c++0x  $^ -o prog2test
+
+prog3: $(OBJECTS) prog3_main.o
+        g++ --std=c++0x $^ -o prog3
+
+
+clean:
+        rm -f *.o prog2 prog1
+
+
+
+
+
+
+
+
+#include "DungeonLevel.h"
+#include <iostream>
+#include <vector>
+#include <chrono>
+#include <functional>
+#include <ctime>
+#include <random>

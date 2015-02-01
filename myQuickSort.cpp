@@ -1,129 +1,54 @@
-
-//mergeSort
-int* mergeSort(int myArray[], int arraySize){
-
-	if (arraySize > 1){
-		
-		//split up the lower half
-		int* tempLower = new int[arraySize / 2];
-		
-		partitionArray(tempLower, myArray, 0, arraySize / 2 - 1);
+// quick
+void quickSort(int myArray[], int left, int right) {
+	int i = left, j = right;
+	countOperations++;
+	countOperations++;
+	int temp;
+	int pivot = myArray[(left + right) / 2];
+	countOperations++;
 
 
+	// partition 
+	//start at both ends:
+	while (i <= j) {
+		countOperations++;
+		//move from the left, encounter and bypass all values less than the pivot:
+		while (myArray[i] < pivot){
+			i++;
+			countOperations++;
+		}
+		//move from the right, encounter and bypass all the values greater than the pivot
+		while (myArray[j] > pivot){
 
-		//split up the upper half
-		int* tempUpper = new int[arraySize - (arraySize / 2)];
-		
-		partitionArray(tempUpper, myArray, (arraySize / 2), arraySize - 1);
+			j--;
+			countOperations++;
+		}
+		//now i and j have stopped at an index that needs to be moved to the other side of the pivot
+		if (i <= j) {
+			countOperations++;
+			temp = myArray[i];
+			countOperations++;
+			//move the items to their proper side of the pivot
+			myArray[i] = myArray[j];
+			countOperations++;
+			myArray[j] = temp;
+			countOperations++;
+			//move the pivot trackers in closer for the next iteration
+			i++;
+			countOperations++;
+			j--;
+			countOperations++;
+		}
+	};
 
 
-		return merge(mergeSort(tempLower, (arraySize / 2)), (arraySize / 2), mergeSort(tempUpper, (arraySize - (arraySize / 2))), (arraySize - (arraySize / 2)));
+	// quicksort itself, recursion is actually the easy part in this sort:
+	if (left < j){
+		quickSort(myArray, left, j);
+		countOperations++;
 	}
-	else
-		return myArray;
-
-
-}
-
-int* merge(int x[], int xSize, int y[], int ySize){
-
-	if (xSize == 0){
-		return y;
-		
+	if (i < right){
+		quickSort(myArray, i, right);
+		countOperations++;
 	}
-	if (ySize == 0){
-		return x;
-		
-	}
-
-	//this variable will hold the the value of the temporary merge, i.e. the recursion
-	int mergeResultSize = xSize + ySize - 1;
-	
-	int* mergeResult = new int[mergeResultSize];
-	
-
-
-	if (x[0] <= y[0]){
-		
-
-		int* tempX = new int[xSize - 1];
-		
-		tempX = partitionArray(tempX, x, 1, xSize - 1); //x[2....k]
-		
-
-		mergeResult = merge(tempX, xSize - 1, y, ySize); 	//merge(x[2..k],y[1..l]
-
-		int* singletonX = new int[1];
-		
-		singletonX[0] = x[0];
-		
-
-
-		int* finalResult = new int[xSize + ySize];
-		
-		//return(concatenateArrays(finalResult, singletonX, 1, mergeResult, mergeResultSize)); //x[1] concatenate merge(x[2..k]; y[1..l])
-		(concatenateArrays(finalResult, singletonX, 1, mergeResult, mergeResultSize));
-		delete[] mergeResult;
-		delete[] tempX;
-		delete[] singletonX;
-		return finalResult;
-	}
-
-	else{
-		int* tempY = new int[ySize - 1];
-		
-		tempY = partitionArray(tempY, y, 1, ySize - 1); //y[2....k]
-		
-
-		mergeResult = merge(x, xSize, tempY, ySize - 1); //merge(x[1..k],y[2..l]
-
-
-		int* singletonY = new int[1];
-		
-		singletonY[0] = y[0];
-		
-
-		int* finalResult = new int[xSize + ySize];
-		
-		//return(concatenateArrays(finalResult, singletonY, 1, mergeResult, mergeResultSize)); //y[1] concatenate merge(x[1..k]; y[2..l])
-		(concatenateArrays(finalResult, singletonY, 1, mergeResult, mergeResultSize));
-		delete[] mergeResult;
-		delete[] tempY;
-		delete[] singletonY;
-		return finalResult;
-	}
-
-}
-
-
-//needed to break up arrays before sending them through mergesort break down/build-up
-int* partitionArray(int newArray[], int copiedArray[], int start, int end){
-
-	int range = end - start;
-	
-
-	for (int i = 0; i <= range; i++){
-		
-		newArray[i] = copiedArray[start];
-		
-		start++;
-		
-	}
-	return newArray;
-}
-
-
-//concatenates x with y, i.e. x goes first
-int* concatenateArrays(int newArray[], int x[], int xSize, int y[], int ySize){
-
-	for (int i = 0; i < xSize; i++){
-		newArray[i] = x[i];
-		
-	}
-	for (int i = 0; i < ySize; i++){
-		newArray[i + xSize] = y[i];
-		
-	}
-
-	return newArray;
 }
